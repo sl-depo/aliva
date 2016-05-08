@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Aliva IDE" id="com.x2nie.aliva.branding.product" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/com.x2nie.aliva.branding/about.png"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/com.x2nie.aliva.branding/icons/icon_16x16.png" i32="/com.x2nie.aliva.branding/icons/icon_32x32.png" i48="/com.x2nie.aliva.branding/icons/icon_48x48.png" i64="/com.x2nie.aliva.branding/icons/icon_64x64.png" i128="/com.x2nie.aliva.branding/icons/icon_128x128.png"/>
+
+   <launcher name="Aliva">
+      <solaris/>
+      <win useIco="true">
+         <ico path="/com.x2nie.aliva.branding/icons/favicon.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.platform" version="3.5.2.R35x_v20100210-0800-9hEiFzmFst-TiEn9hNYgDWg1XN8ulH_JvCNGB"/>
+      <feature id="org.python.pydev.feature" version="2.8.2.2013090511"/>
+      <feature id="com.x2nie.aliva.feature" version="1.0.0.qualifier"/>
+   </features>
+
+
+</product>

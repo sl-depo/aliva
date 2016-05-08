@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="product"
+         name="%productName"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="Aliva IDE">
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="appName"
+               value="Aliva IDE">
+         </property>
+         <property
+               name="aboutImage"
+               value="about.png">
+         </property>
+    <property
+          name="aboutText"
+          value="%productBlurb">
+    </property>
+         <property
+               name="windowImages"
+               value="icons/icon_16x16.png,icons/icon_32x32.png,icons/icon_48x48.png,icons/icon_64x64.png,icons/icon_128x128.png">
+         </property>
+         <property
+               name="introTitle"
+               value="%productIntroTitle">
+         </property>
+         <property
+          		name="introBrandingImage"
+          		value="product:intro-eclipse.png"/>
+          <property
+          		name="introBrandingImageText"
+          		value="%productIntroBrandingText"/>
+		  <property
+				name="introDescription-overview"
+				value="%introDescription-overview"/>
+		  <property
+				name="introDescription-tutorials"
+				value="%introDescription-tutorials"/>
+		  <property
+				name="introDescription-samples"
+				value="%introDescription-samples"/>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="com.x2nie.aliva.branding.product">
+      </introProductBinding>
+   </extension>
+
+</plugin>
